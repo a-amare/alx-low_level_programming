@@ -3,26 +3,28 @@
 #include <stdio.h>
 
 /**
- * IF ELSE TRIAL
+ * main - Entry point of the program
  *
- * THIS FUNCTION IS RESPONSIBLE FOR STARTING THE EXECUTION OF THE PROGRAM.
- * IT IS THE ENTRY POINT FOR THE PROGRAM'S EXECUTION AND TYPICALLY CONTAINS
- * THE MAIN LOGIC AND FUNCTION CALLS.
+ * This function is responsible for starting the execution of the program.
+ * It is the entry point for the program's execution and typically contains
+ * the main logic and function calls.
  *
- * RETURN: 0 ON SUCCESSFUL EXECUTION
+ * Return: 0 on successful execution
  */
 int main(void)
 {
-  /* this is the main one */
-  int n; 
-  srand(time(0));
-  n = rand() - RAND_MAX / 2;
-  /* your code goes there */
-  if (n > 0)
-    return (printf("%d is positive\n", n));
-  else if (n < 0)
-    return (printf("%d is negative\n", n));
-  else
-    return (printf("%d is zero\n", n));
-  return (0);
+	int n;
+
+	srand(time(0));
+
+	n = rand() - RAND_MAX / 2;
+
+	if (n > 0)
+		return (printf("%d is positive\n", n));
+	else if (n < 0)
+		return (printf("%d is negative\n", n));
+	else
+		return (printf("%d is zero\n", n));
+
+	return (0);
 }
