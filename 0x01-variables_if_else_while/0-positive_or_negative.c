@@ -1,26 +1,27 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * IF ELSE TRIAL
+ *
+ * THIS FUNCTION IS RESPONSIBLE FOR STARTING THE EXECUTION OF THE PROGRAM.
+ * IT IS THE ENTRY POINT FOR THE PROGRAM'S EXECUTION AND TYPICALLY CONTAINS
+ * THE MAIN LOGIC AND FUNCTION CALLS.
+ *
+ * RETURN: 0 ON SUCCESSFUL EXECUTION
+ */
 int main(void)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	if (n > 0)
-	  {
-	    return printf("%n is positive", n);
-	  }
-	else if (n == 0)
-	  {
-	    return printf("%n is zero", n);
-	  }
-	else
-	  {
-	    return printf("%n is negative", n);
-	  }
-	return (0);
+  /* this is the main one */
+  int n; 
+  srand(time(0));
+  n = rand() - RAND_MAX / 2;
+  /* your code goes there */
+  if (n > 0)
+    return (printf("%d is positive\n", n));
+  else if (n < 0)
+    return (printf("%d is negative\n", n));
+  else
+    return (printf("%d is zero\n", n));
+  return (0);
 }
