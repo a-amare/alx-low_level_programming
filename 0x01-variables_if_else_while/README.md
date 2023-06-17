@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+General
+=======
+>>>>>>> b60e4ffbf4862a96a79536117289e7b4501e79d9
 What are the arithmetic operators and how to use them
 What are the logical operators (sometimes called boolean operators) and how to use them
 What the the relational operators and how to use them
