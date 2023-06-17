@@ -8,7 +8,12 @@
 int main(void)
 {
     /*this is also a short description*/
-    printf("1,2,3,4,5,6,7,8,9\n");
-
+    int hex = (0xf);
+    while (hex <= 0x16)
+    {
+        putchar(0xf - hex);
+        hex++;
+    }
+    printf("/n");
     return (0); 
 }
