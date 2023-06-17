@@ -7,13 +7,8 @@
 
 int main (void)
 {
-    int hex = (0x0);
-
-    while (hex <= 0x16)
-    {
-        putchar(hex);
-        hex++;
-    }
+    /*this is also a short description*/
+    printf("1,2,3,4,5,6,7,8,9\n");
 
     return (0);    
 }
