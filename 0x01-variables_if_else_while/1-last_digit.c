@@ -3,30 +3,30 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - Entry point
  *
- * This function is responsible for starting the execution of the program.
- * It is the entry point for the program's execution and typically contains
- * the main logic and function calls.
+ * Description: print the value of n status:
+ *              greater than, is zero and is not less than 6.
  *
- * Return: 0 on successful execution
- */
+ * Return: Always O (Success)
+*/
+
 int main(void)
 {
-	int n, l;
+	int n, digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	/* My code */
-	l = n % 10;
+	/*my code*/
+	digit = n % 10; /*gets last digit*/
 
-	if (l > 5)
-		return (printf("Last digit of %d is %d and is greater than 5\n", n, l));
-	else if (l == 0)
-		return (printf("Last digit of %d is %d and is 0\n", n, l));
-	else
-		return (printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l));
+	if (digit > 5)
+		printf("Last digit of %i is %i and is greater than 5\n", n, digit);
+	else if (digit == 0)
+		printf("Last digit of %i is %i and is 0\n", n, digit);
+	else if (digit < 6 && digit != 0)
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, digit);
 
 	return (0);
 }
