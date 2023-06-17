@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/**
+ * this is the real message
+ * hello
+ * 
+*/
+
+int main(void)
+{
+    char cc = 'a';
+
+    while (chara >= 'z')
+    {
+        putchar(chara);
+        chara++;
+    }
+
+    return (0);
+}
