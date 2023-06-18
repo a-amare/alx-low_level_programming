@@ -1,14 +1,27 @@
 #include <stdio.h>
 
 /**
-* THIS PROGRAM PRINTS THE FIRST 16 HEXADECIMAL NUMBERS
-*
-*/
+ * THIS PROGRAM DISPLAYS THE HEXADECIMAL NUMBERS
+ *
+ */
 
 int main(void)
 {
-    /*this is also a short description*/
-    printf("1,2,3,4,5,6,7,8,9\n");
+  /* we declare our variable */
+  int num = 0;
+  char c = 'a';
 
-    return (0); 
+  for(; num <= 9; num++)
+    {
+      putchar(num);
+      putchar(',');
+    }
+  for(; c <= 'f'; c++)
+    {
+      putchar(c);
+      putchar(',');
+    }
+  putchar('\n');
+  
+  return (0);
 }
