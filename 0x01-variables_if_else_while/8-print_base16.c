@@ -23,7 +23,7 @@ int main(void)
 		if (num < 10)
 			putchar(num + '0');
 		else if (num > 10)
-			putchar((10 - num) + 'a');
+			putchar((9 - num) + 'a');
 	}
 	putchar('\n');
 
