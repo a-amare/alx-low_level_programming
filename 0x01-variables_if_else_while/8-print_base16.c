@@ -17,13 +17,16 @@
 int main(void)
 {
 	int num;
+	int temp_name;
 
 	for (num = 0; num < 16; num++)
 	{
+		temp_name = num - 10;
 		if (num < 10)
 			putchar(num + '0');
+
 		else if (num >= 10)
-			putchar((9 - num) + 'a');
+			putchar(temp_name + 'a');
 	}
 	putchar('\n');
 
