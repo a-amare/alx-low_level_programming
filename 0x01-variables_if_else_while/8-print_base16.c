@@ -1,8 +1,7 @@
 /*
- * File: 9-print_comb.c
- * Author: Your Name
- *
-*/
+ * File: 8-print_base16.c
+ * Author: Me
+ */
 
 #include <stdio.h>
 
@@ -17,17 +16,14 @@
 
 int main(void)
 {
-	/* this is the main fun */
-	int d1;
+	int num;
 
-	for (d1 = 0; d1 <= 9; d1++)
+	for (num = 0; num < 16; num++)
 	{
-		putchar(d1 + '0');
-		if (d1 != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		if (num < 10)
+			putchar(num + '0');
+		else if (num > 10)
+			putchar(num + 'a');
 	}
 	putchar('\n');
 
