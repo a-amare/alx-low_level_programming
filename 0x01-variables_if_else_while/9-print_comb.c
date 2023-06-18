@@ -10,6 +10,7 @@ int main(void)
     {
       putchar(d1 + '0');
       putchar(',');
+      putchar(' ');
 
     }
   putchar(9 + '0');
