@@ -5,9 +5,8 @@
 
 int main(void)
 {
-  /* this is the main function */
+ /* this is the main function */
   int d1;
-
   /* this is just a criteria */
   for (d1 = 0; d1 <= 9; d1++)
     {
