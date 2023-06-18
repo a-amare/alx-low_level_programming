@@ -1,6 +1,17 @@
+/*
+ * File: 9-print_comb.c
+ * Author: Your Name
+ */
+
 #include <stdio.h>
+
 /**
- * PRINTS ALL COMBINATION OF TWO DIGITS DELIMITED BY ,
+ * main - Entry point
+ *
+ * Description: Prints all possible combinations of single-digit numbers
+ * separated by commas.
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
