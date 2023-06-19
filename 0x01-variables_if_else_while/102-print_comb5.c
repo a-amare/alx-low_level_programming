@@ -2,49 +2,43 @@
  * File: 102-print_comb5.c
  * Author: Me
  */
-
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: Prints all possible combinations of single-digit numbers
- * separated by commas.
- *
- * Return: Always 0 (Success)
+ * main - Entry Point
+ * Description: Write a program that prints all possible
+ * different combinations of two digits
+ * Return: 0
  */
 
 int main(void)
 {
-    int i, j, k, l;
+	int firstDigit = 0, seconDigit;
 
-    for (i = 0; i <= 9; i++)
-    {
-        for (j = 0; j <= 9; j++)
-        {
-            for (k = 0; k <= 9; k++)
-            {
-                for (l = 0; l <=9; l++)
-                {
-                    if ((i != k || j != l) && (i <= k && l > j))
-                    {
-                        putchar(i + '0');
-                        putchar(j+ '0');
-                        putchar(' ');
-                        putchar(k+ '0');
-                        putchar(l+ '0');
+	while (firstDigit <= 99)
+	{
+		seconDigit = firstDigit;
+		while (seconDigit <= 99)
+		{
+			if (seconDigit != firstDigit)
+			{
+				putchar((firstDigit / 10) + 48);
+				putchar((firstDigit % 10) + 48);
+				putchar(' ');
+				putchar((seconDigit / 10) + 48);
+				putchar((seconDigit % 10) + 48);
 
-                        if (i != 9 || j != 8 || k != 9 || l != 9)
-                        {
-                            putchar(',');
-                            putchar(' ');
-                        }
-                    }
-                }
-            }
-        }
-    }
-    putchar('\n');
+				if (firstDigit != 98 || seconDigit != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			++seconDigit;
+		}
+		++firstDigit;
+	}
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
