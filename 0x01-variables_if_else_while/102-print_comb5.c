@@ -34,7 +34,7 @@ int main(void)
 							{
 								putchar(i);
 								putchar(j);
-								puthcar(' ');
+								putchar(' ');
 								putchar(k);
 								putchar(l);
 
