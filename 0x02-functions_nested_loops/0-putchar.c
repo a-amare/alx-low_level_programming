@@ -21,5 +21,6 @@ int main(void)
 	{
 		_putchar(phrase[i]);
 	}
+	_putchar('\n');
 	return (0);
 }
