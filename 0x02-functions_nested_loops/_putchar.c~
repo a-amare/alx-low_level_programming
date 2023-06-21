@@ -1,0 +1,20 @@
+#include <main.h>
+
+/**
+ * THIS IS A PROGRAM THAT PRINTS OUT STRINGS USING PUTCHAR FUN
+ *
+ *
+ */
+
+int _putchar(char c[])
+{
+        int i=0;
+        while (c[i] != '\0');
+        {
+                putchar(c[i]);
+                i++;
+        }
+        putchar('\n');
+        return (0);
+
+}

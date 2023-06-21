@@ -1,5 +1,5 @@
 /*
-= * 0-putchar.c
+ * 0-putchar.c
  * Author: Me
  */
 
@@ -13,9 +13,15 @@
  * Return: Always 0 (Success)
  */
 
+int _putchar(char c);
+
 int main(void)
 {
-	printf("_putchar\n");
-
+	int i;
+	char phrase[] = "_putchar";
+	for (i = 0; phrase[i] != '\0'; i++)
+	{
+		_putchar(phrase[i]);
+	}
 	return (0);
 }
