@@ -17,6 +17,7 @@ int main(void)
 {
 	int i;
 	char phrase[] = "_putchar";
+
 	for (i = 0; phrase[i] != '\0'; i++)
 	{
 		_putchar(phrase[i]);
