@@ -1,3 +1,72 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * file name: 1-alphabet.c
  *
@@ -11,7 +80,7 @@ int _putchar(char c);
  */
 
 
-int print_alphabet(void)
+int main(void)
 {
 	int a;
 
