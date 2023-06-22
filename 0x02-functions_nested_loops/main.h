@@ -6,5 +6,6 @@
 // Function declaration
 
 int _putchar(char c);
+int _print_alphabet(void);
 
 #endif  // MAIN_H
