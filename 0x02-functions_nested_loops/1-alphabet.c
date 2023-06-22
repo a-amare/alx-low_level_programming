@@ -1,9 +1,16 @@
 #include "main.h"
 
-/**
- * THIS PROGRAM PRINTS OUT LOWER CASE LETTERS a-z
- *
- */
+/* 
+   Function: print_alphabet
+   Prints the alphabet from 'A' to 'Z' in uppercase.
+
+   Parameters:
+   None
+
+   Returns:
+   None
+*/
+
 void print_alphabet(void)
 {
 	int a;
