@@ -1,17 +1,10 @@
-/*
- * file name: 1-alphabet.c
- *
- */
-
-int _putchar(char c);
+#include "main.h"
 
 /**
  * THIS PROGRAM PRINTS OUT LOWER CASE LETTERS a-z
  *
  */
-
-
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	int a;
 
@@ -23,6 +16,4 @@ int print_alphabet(void)
 	}
 
 	_putchar('\n');
-
-	return (0);
 }
