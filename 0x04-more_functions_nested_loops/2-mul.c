@@ -1,14 +1,12 @@
 #include "main.h"
 
+
 /**
- * mul - prints out multiples
+ * print_numbers - print 0 - 9
+ *             only using _putchar twice
  *
- *@a: first integer
- *@b: second integer
- *
- * Return - axb
- *
- */
+ * Return: Always 0 (Success)
+*/
 
 int mul(int a, int b)
 {
