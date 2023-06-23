@@ -1,14 +1,10 @@
 #include "main.h"
 
-/* 
-   Function: print_alphabet
-   Prints the alphabet from 'A' to 'Z' in uppercase.
-
-   Parameters:
-   None
-
-   Returns:
-   None
+/**
+ * print_alphabet - Prints the alphabet from 'A' to 'Z' in uppercase
+ * None
+ *
+ * Returns -  None
 */
 
 void print_alphabet(void)
