@@ -8,10 +8,22 @@ void jack_bauer(void)
 {
 	int i, j, k, l;
 
+	int check_24 = 0;
+
+
 	for (i = 0; i <= 2; i++)
 	{
-		for (j = 0; j <= 3; j++)
+		if (check_24 == 1)
+			break;
+
+		for (j = 0; j <= 9; j++)
 		{
+			if (i == 2 && j == 4)
+			{
+				check_24 = 1;
+				break;
+			}
+
 			for (k = 0; k <= 5; k++)
 			{
 				for (l = 0; l <= 9; l++)
