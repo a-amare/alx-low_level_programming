@@ -1,25 +1,11 @@
 #include "main.h"
 
 /**
- * Function: print_alphabet_x10
+ * print_alphabet_x10 - prints tentimes
  *
- * return: void
+ * Return - tentimes
  *
 */
-
-void print_alphabet(void);
-
-/**
- * Function: print_alphabet
- * ------------------------
- * Prints the alphabet from 'a' to 'z' in lowercase.
- *
- * Parameters:
- *     None
- *
- * Returns:
- *     void
- */
 
 void print_alphabet_x10(void)
 {
