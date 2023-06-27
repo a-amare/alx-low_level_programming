@@ -7,7 +7,7 @@
  *
  *@s: memory location of the string
  *
- *Returns - an int of the final count
+ * Return: The length of the string (number of characters).
  *
  */
 
