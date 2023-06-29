@@ -1,0 +1,50 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * *_strcat - concatinages two strings overwriting the last char
+ *
+ *@dest: string where the other string is added to
+ *@src: the one that is added to the first one
+ *
+ *Return: a string that is the addition of both the characters
+ */
+
+
+char *_strcat(char *dest, char *src)
+{
+	/* calculate len of dest and src */
+	int dest_len, src_len, i;
+
+
+	while (*dest != '\0')
+	{
+		dest_len++;
+		dest++;
+	}
+
+	while (*src != '\0')
+	{
+		src_len++;
+		src++;
+	}
+
+	/* printf("d: %d \t s: %d \n", dest_len, src_len);*/
+
+	dest = dest + dest_len;
+	printf(dest);
+	printf('\n');
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-strcat.c -o 0-strcat
+
+	for (i = 0; i <= src_len; i++)
+	{
+		dest = dest + i;
+		src = src + i;
+
+		*dest = *src;
+		dest = dest - i;
+		src = src - i;
+	}
+
+	return (dest);
+}
