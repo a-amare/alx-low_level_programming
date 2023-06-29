@@ -20,11 +20,11 @@ char *_strcat(char *dest, char *src)
 	while (src[s_len] != '\0')
 		s_len++;
 
-	for(i = 0; i < s_len; i++)
+	for (i = 0; i < s_len; i++)
 	{
 		dest[d_len + i] = src[i];
 	}
 
 	dest[d_len + s_len] = '\0';
-	return(dest);
+	return (dest);
 }
