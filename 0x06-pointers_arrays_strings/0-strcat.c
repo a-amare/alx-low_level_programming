@@ -13,35 +13,19 @@
 
 char *_strcat(char *dest, char *src)
 {
-	/* calculate len of dest and src */
-	int dest_len, src_len, i;
+	int d_len = 0, s_len = 0, i;
 
+	while (dest[d_len] != '\0')
+		d_len++;
 
-	while (*dest != '\0')
+	while (src[s_len] != '\0')
+		s_len++;
+
+	for(i = 0; i < s_len; i++)
 	{
-		dest_len++;
-		dest++;
+		dest[d_len + i] = src[i];
 	}
 
-	while (*src != '\0')
-	{
-		src_len++;
-		src++;
-	}
-
-	/* printf("d: %d \t s: %d \n", dest_len, src_len);*/
-
-	dest = dest + dest_len - 1;
-
-	for (i = 0; i < src_len; i++)
-	{
-		dest = dest + i;
-		src = src + i;
-
-		*dest = *src;
-		dest = dest - i;
-		src = src - i;
-	}
-
-	return (dest);
+	dest[d_len + s_len] = '\0';
+	return(dest);
 }
