@@ -8,6 +8,7 @@
 
 char *leet(char *x)
 {
+    char * f = x;
     while (*x != '\0')
     {
         if (*x == 'a' || *x == 'A')
@@ -33,6 +34,8 @@ char *leet(char *x)
         x++;
 
     }
+
+    *x = f;
 
     return (x);
 }
