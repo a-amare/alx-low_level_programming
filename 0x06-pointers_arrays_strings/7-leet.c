@@ -35,7 +35,7 @@ char *leet(char *x)
 
     }
 
-    *x = f;
+    x = f;
 
     return (x);
 }
