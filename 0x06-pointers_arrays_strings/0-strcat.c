@@ -1,30 +1,26 @@
-#include "main.h"
-
 /**
- * *_strcat - concatinages two strings overwriting the last char
+ * _strcat - function that concatenates
+ *          two strings.
  *
- *@dest: string where the other string is added to
- *@src: the one that is added to the first one
+ * @dest: pointer to destnation input
+ * @src: pointer to source input
  *
- *Return: a string that is the addition of both the characters
- */
-
+ * Return: pointer to resulting string @dest
+*/
 
 char *_strcat(char *dest, char *src)
 {
-	int d_len = 0, s_len = 0, i;
+	int c, c2;
 
-	while (dest[d_len] != '\0')
-		d_len++;
+	c = 0;
+	/*find the size of dest array*/
+	while (dest[c])
+		c++;
 
-	while (src[s_len] != '\0')
-		s_len++;
+	/* iterate through each src array value without the null byte*/
+	for (c2 = 0; src[c2] ; c2++)
+		/*append src[c2] to dest[c] while overwritting the null byte in dest*/
+		dest[c++] = src[c2];
 
-	for (i = 0; i < s_len; i++)
-	{
-		dest[d_len + i] = src[i];
-	}
-
-	dest[d_len + s_len] = '\0';
 	return (dest);
 }
