@@ -5,9 +5,9 @@
  * @dest: first i/p
  * @src: second i/p
  * @n: number of bytes
- * 
+ *
  * Return:  a pointer to the resulting string dest
-*/
+ */
 
 char *_strncat(char *dest, char *src, int n)
 {
