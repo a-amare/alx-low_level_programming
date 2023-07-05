@@ -1,0 +1,15 @@
+/**
+ * _strlen_recursion - length of string length excluding EOF \0
+ *
+ * @s: pointer of string start
+ *
+ * Return: int lenhth of string
+ */
+
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+		return (0);
+
+	return (1 + _strlen_recursion(++s));
+}
