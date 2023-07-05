@@ -1,0 +1,11 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+void 0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:13:3: error: implicit declaration of function ‘_putchar’ [-Werror=implicit-function-declaration]
+   13 |   _putchar(*s);
+      |   ^~~~~~~~
+cc1: all warnings being treated as errors
+void _puts_recursion(char *s);
+
+#endif
