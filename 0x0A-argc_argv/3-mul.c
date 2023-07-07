@@ -14,14 +14,14 @@
  *
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (EXIT_FAILURE);
 	}
 
-	printf("%d\n", **argv[1] * **argv[2]);
+	printf("%d\n%d\n", argv[1], argv[2]);
 	exit(EXIT_SUCCESS);
 }

@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+#include <ctype.h>
+
+/**
+ * main - adds numbers
+ *
+ * @argv: v
+ * @argc: count
+ *
+ * Return: success or failure
+ */
+
+int main(int argc, char **argv)
+{
+	int sum;
+	
+	if (argc == 1)
+	{
+		printf("0");
+		return (EXIT_SUCCESS);
+	}
+
+	argc--;
+	argv++;
+
+	while (argc--)
+	{
+		if(!isdigit(**argv))
+		{
+			printf("Error\n");
+			return (EXIT_FAILURE);
+		}
+
+		sum += **argv;
+		argv++;
+	}
+
+	printf("%d\n", sum);
+
+	return (EXIT_SUCCESS);
+}
