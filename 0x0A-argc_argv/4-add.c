@@ -1,42 +1,61 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
- * main - adds numbers
- *
- * @argv: v
- * @argc: count
- *
- * Return: success or failure
- */
+ * isNum - check if string array is num
+ * @num: string to check
+ * Return: 0 if it's a number
+ *         1 if it's not a number
+*/
 
-int main(int argc, char **argv)
+int isNum(char num[])
 {
-	int sum, i;
+	int i, l = strlen(num);
 
-	if (argc <= 1)
+	for (i = 0; i < l; i++)
+	{
+		if (!isdigit(num[i]))
+			return (1);
+	}
+	return (0);
+}
+
+
+/**
+ * main - a program that adds positive numbers
+ *
+ * @argc: holds the number of arguments passed
+ * @argv: array pointer that holds the arguments passed
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main(int argc, char *argv[])
+{
+	int i, sum;
+
+	if (argc == 1)
 	{
 		printf("0\n");
-		return (EXIT_FAILURE);
 	}
-
-	for (i = 1; i <= argc; i++)
+	else
 	{
-		if (isdigit(atoi(argv[i])))
+		sum = 0;
+		for (i = 1; i < argc; i++)
 		{
-			sum += *argv[i];
-			printf("%d/n", sum);
+			if (isNum(argv[i]) == 0)
+			{
+				sum += atoi(argv[i]);
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-
-		else
-		{
-			printf("Error\n");
-			return (EXIT_FAILURE);
-		}
+		printf("%d\n", sum);
 	}
-
-	printf("final sum = %d\n", sum);
-	return (EXIT_SUCCESS);
+	return (0);
 }
