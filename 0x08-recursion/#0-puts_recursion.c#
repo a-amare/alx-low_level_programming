@@ -1,0 +1,15 @@
+/**
+ * _puts_recursion - prints out a string and a new line after the string
+ *
+ * @s: the input string
+ *
+ */
+
+void _puts_recursion(char *s)
+{
+	while (*S != '\0')
+	{
+		_putchar(*s);
+		s++;
+	}
+_putchar('\n'):
