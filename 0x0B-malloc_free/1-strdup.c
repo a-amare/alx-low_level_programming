@@ -11,25 +11,34 @@
 
 char *_strdup(char *str)
 {
-	int i = 0, l = 0;
-	char *s;
+	int i;
+	int count_len_str = 0;
+	char * dup;
 
 	if (str == NULL)
-		return (NULL);
-
-	/*calculate size of str*/
-	while (str[l] != '\0')
-		l++;
-
-	s = malloc((l + 1) * sizeof(char));
-	if (s == NULL)
-		return (NULL);
-
-	while (str[i] != '\0')
 	{
-		s[i] = str[i];
-		i++;
+		return NULL;
 	}
 
-	return (s);
+	/*CALCULATE SIZE OF INPUT string?*/
+	while (str[count_len_str] != '\0')
+	{
+		count_len_str++;
+	}
+
+	/*use length to assign malloc*/
+	
+	dup = malloc(sizeof(char) * count_len_str);
+
+	if (dup == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < count_len_str; i++)
+	{
+		dup[i] = str[i];
+	}
+
+	return (dup);
 }
