@@ -6,6 +6,7 @@
  * @name: namePointer
  * @age: float
  * @owner: name of owner
+ * Returns: nothing
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
