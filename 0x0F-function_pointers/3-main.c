@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 	int a = atoi(argv[1]);
 	int b = atoi(argv[3]);
 	char *operator = argv[2];
+	int result;
 	
 	if (argc != 4)
 	{
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	printf("%d\n",(*get_op_func(operator))(a, b));
+	result = printf("%d\n",(*get_op_func(operator))(a, b));
 
-	return (*get_op_func(operator))(a, b);
+	return (result);
 }
