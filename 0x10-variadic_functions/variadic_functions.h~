@@ -1,0 +1,4 @@
+#ifndef VERIADIC_H
+#define VERIADIC_H
+
+int sum_them_all(const unsigned int n, ...);

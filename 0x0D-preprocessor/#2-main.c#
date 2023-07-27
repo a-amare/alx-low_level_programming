@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+
+/**
+ * main - prints name of this file
+ *
+ * Return: nothing
+ */
+int main(voidgcc -Wall -pedantic -Werror -Wextra -std=gnu89 02-main.c -o cc~
+{
+	printf(__FILE__);
+	printf("\n");
+
+	return (0);
+}
