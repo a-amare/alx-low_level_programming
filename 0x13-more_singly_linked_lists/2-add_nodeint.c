@@ -9,9 +9,31 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t new_node;
-	new_node->n = n;
-	new_node->next = head;
+	listint_t *new_node;
 
-	return (*new_node);
+	if (*head == NULL)
+	{
+		printf("tadow");
+	}
+	else
+	{
+		printf("start head: %p \t \t \t %p \n", (void *)*head, (void *)&head);
+	}
+
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
+	{
+		printf("fail");
+		return (NULL);
+	}
+	new_node->n = n;
+	new_node->next = *head;
+
+	printf("next: %p \t \tn: %d\n", (void *)new_node->next, new_node->n);
+
+	free(new_node);
+
+	*head = new_node;
+
+	return (*head);
 }
