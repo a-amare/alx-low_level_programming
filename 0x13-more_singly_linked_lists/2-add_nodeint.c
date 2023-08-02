@@ -31,9 +31,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	printf("next: %p \t \tn: %d\n", (void *)new_node->next, new_node->n);
 
-	free(new_node);
 
 	*head = new_node;
+
+	free(new_node);
 
 	return (*head);
 }
