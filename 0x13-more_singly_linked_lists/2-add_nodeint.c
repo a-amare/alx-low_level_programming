@@ -1,40 +1,23 @@
 #include "lists.h"
 
 /**
- * add_nodeint - adds a new linkedlist element at the head
- * @head: pointer to the previous head
- * @n: new number (data) to be added to the node
- * Return: address of new element or NULL
+ * add_nodeint - adds a new node at the beginning of a linked list
+ * @head: pointer to the first node in the list
+ * @n: data to insert in that new node
+ *
+ * Return: pointer to the new node, or NULL if it fails
  */
-
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *new_node;
+	listint_t *new;
 
-	if (*head == NULL)
-	{
-		printf("tadow");
-	}
-	else
-	{
-		printf("start head: %p \t \t \t %p \n", (void *)*head, (void *)&head);
-	}
-
-	new_node = malloc(sizeof(listint_t));
-	if (new_node == NULL)
-	{
-		printf("fail");
+	new = malloc(sizeof(listint_t));
+	if (!new)
 		return (NULL);
-	}
-	new_node->n = n;
-	new_node->next = *head;
 
-	printf("next: %p \t \tn: %d\n", (void *)new_node->next, new_node->n);
+	new->n = n;
+	new->next = *head;
+	*head = new;
 
-
-	*head = new_node;
-
-	free(new_node);
-
-	return (*head);
+	return (new);
 }
